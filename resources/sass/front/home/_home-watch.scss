@@ -1,0 +1,75 @@
+.home-watch {
+    position: relative;
+    z-index: 14;
+    background-color: $secondary;
+    padding-top: 50px;
+    padding-bottom: 30px;
+
+    .heading {
+        margin-bottom: 20px;
+        font-family: $font-top;
+        color: $primary;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 40px;
+        line-height: 54px;
+
+        @media #{$min-md} {
+            font-size: 50px;
+            line-height: 65px;
+        }
+        @media #{$min-lg} {
+            font-size: 60px;
+            line-height: 76px;
+        }
+    }
+
+    .info-text {
+        margin-bottom: 30px;
+        font-family: $font-top;
+        color: $primary;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 26px;
+        line-height: 32px;
+
+        @media #{$min-md} {
+            font-size: 28px;
+            line-height: 34px;
+        }
+        @media #{$min-lg} {
+            font-size: 30px;
+            line-height: 36px;
+            text-align: right;
+        }
+    }
+
+    .link-icon {
+        display: inline-block;
+        margin: 0 15px 30px;
+
+        &:hover {
+            color: $white;
+            text-decoration: none;
+
+            path,
+            circle {
+                fill: $white;
+            }
+        }
+        &:focus-visible {
+            color: $white;
+            text-decoration: none;
+
+            path,
+            circle {
+                fill: $white;
+            }
+        }
+    }
+
+    .img {
+        display: block;
+        margin: 0 auto;
+    }
+}

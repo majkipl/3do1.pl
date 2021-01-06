@@ -1,0 +1,40 @@
+// Variables
+@import "./front/variables";
+
+// Fonts
+@import "./front/typography";
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+// OWL
+@import "owl.carousel/dist/assets/owl.carousel.min.css";
+@import "owl.carousel/dist/assets/owl.theme.default.min.css";
+
+// Main
+@import "./front/main";
+
+@import "./front/header";
+@import "./front/footer";
+
+@import "./front/home/home-top";
+@import "./front/home/home-video";
+@import "./front/home/home-awards";
+@import "./front/home/home-steps";
+@import "./front/home/home-products";
+@import "./front/home/home-watch";
+@import "./front/home/home-partners";
+@import "./front/home/home-form";
+//
+//@import "./styles/home/home-win";
+//
+//@import "./styles/form/form-top";
+//@import "./styles/form/form-form";
+//
+//@import "./styles/thankyou/thankyou-info";
+//
+//@import "./styles/text/section-text";
+//
+//@import "./styles/error/error-info";
+//
+@import "./front/extra";

@@ -1,0 +1,270 @@
+.home-steps {
+    position: relative;
+    z-index: 16;
+    background-color: $secondary;
+    padding: 155px 0 30px;
+    margin-top: -125px;
+
+    .heading {
+        margin-bottom: 20px;
+        font-family: $font-top;
+        color: $primary;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 40px;
+        line-height: 54px;
+
+        @media #{$min-md} {
+            font-size: 50px;
+            line-height: 65px;
+        }
+        @media #{$min-lg} {
+            font-size: 60px;
+            line-height: 76px;
+        }
+    }
+
+    .text {
+        color: $primary;
+        font-size: 16px;
+        line-height: 22px;
+
+        @media #{$min-md} {
+            font-size: 17px;
+            line-height: 23px;
+        }
+        @media #{$min-lg} {
+            font-size: 18px;
+            line-height: 24px;
+        }
+
+        &.left {
+            text-align: left;
+        }
+        &.right {
+            text-align: right;
+        }
+        &.bold {
+            font-weight: bold;
+        }
+        &.uppercase {
+            text-transform: uppercase;
+        }
+        &.font-top {
+            font-family: $font-top;
+        }
+        &.border-bottom-1 {
+            border-bottom: 1px solid $primary;
+        }
+        &.large {
+            font-size: 26px;
+            line-height: 32px;
+
+            @media #{$min-md} {
+                font-size: 28px;
+                line-height: 34px;
+            }
+            @media #{$min-lg} {
+                font-size: 30px;
+                line-height: 36px;
+            }
+        }
+    }
+
+    .rules {
+        .rules-title {
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 22px;
+
+            @media #{$min-md} {
+                font-size: 17px;
+                line-height: 23px;
+            }
+            @media #{$min-lg} {
+                font-size: 18px;
+                line-height: 24px;
+            }
+        }
+
+        .rules-list {
+            padding-left: 20px;
+            font-size: 16px;
+            line-height: 22px;
+
+            @media #{$min-md} {
+                font-size: 17px;
+                line-height: 23px;
+            }
+            @media #{$min-lg} {
+                font-size: 18px;
+                line-height: 24px;
+            }
+        }
+
+        .rules-link {
+            display: inline-block;
+            margin: 1rem 0;
+            color: $primary;
+            text-decoration: underline;
+            font-size: 16px;
+            line-height: 22px;
+
+            @media #{$min-md} {
+                font-size: 17px;
+                line-height: 23px;
+            }
+            @media #{$min-lg} {
+                font-size: 18px;
+                line-height: 24px;
+            }
+        }
+    }
+
+    .diagram {
+        position: relative;
+        margin: -150px auto -120px;
+        width: 180px;
+        transform: scale(0.525);
+
+        @media #{$min-sm} {
+            margin: -30px auto -10px;
+            transform: scale(0.8);
+        }
+        @media #{$min-md} {
+            margin: 85px auto 70px;
+            transform: none;
+        }
+        @media #{$min-lg} {
+            width: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .step {
+            background-color: $white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 180px;
+            height: 180px;
+            padding: 0 30px;
+            border-radius: 50%;
+            text-align: center;
+
+            &.step-3 {
+                position: absolute;
+                top: calc(100% - 180px);
+                left: calc(-100% - 30px);
+            }
+            &.step-5 {
+                position: absolute;
+                top: calc(100% - 180px);
+                left: calc(100% + 30px);
+            }
+
+            @media #{$min-lg} {
+                &.step-3 {
+                    top: -290px;
+                    left: calc(50% + 280px);
+                }
+                &.step-5 {
+                    top: 290px;
+                    left: calc(50% + 280px);
+                }
+            }
+
+            img {
+                transition: transform 0.25s ease-in-out;
+                transform: scale(0.95);
+            }
+
+            &:hover {
+                img {
+                    transform: scale(1);
+                }
+            }
+        }
+
+        .step-text {
+            font-size: 16px;
+            line-height: 20px;
+            margin-top: 10px;
+        }
+
+        .line {
+            margin: 30px 0;
+            transform: rotate(90deg) scale(0.6);
+            z-index: 1;
+
+            &.line-2 {
+                position: absolute;
+                top: calc(50% + 40px);
+                left: 0;
+                transform: rotate(90deg) scale(0.75) translate(0, -100%);
+            }
+            &.line-4 {
+                position: absolute;
+                top: calc(50% + 40px);
+                left: 0;
+                transform: rotate(90deg) scale(0.75) translate(0, 100%);
+            }
+
+            @media #{$min-lg} {
+                margin: 0 -10px;
+                transform: none;
+
+                &.line-2 {
+                    top: -75%;
+                    left: calc(50% + 90px);
+                    transform: none;
+                }
+                &.line-4 {
+                    top: 75%;
+                    left: calc(50% + 90px);
+                    transform: none;
+                }
+            }
+        }
+    }
+
+    .feature-img {
+        display: block;
+        margin: 0 auto -160px;
+
+        @media #{$min-lg} {
+            margin-left: -80px;
+        }
+        @media #{$min-xl} {
+            margin-left: -95px;
+        }
+    }
+
+    .zi-9 {
+        z-index: 9;
+    }
+
+    .step-animation {
+        img {
+            transition: transform 0.25s ease-in-out;
+            transform: scale(0.95);
+        }
+
+        &:hover {
+            img {
+                transform: scale(1);
+            }
+        }
+    }
+
+    a.button {
+        transition: all 0.25s ease-in-out;
+        transform: scale(1);
+
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+}
