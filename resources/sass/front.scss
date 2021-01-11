@@ -3,9 +3,12 @@
 
 // Fonts
 @import "./front/typography";
+@import "./glyphicon";
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
+@import "./plugins/bootstrap-datetimepicker";
+
 
 // OWL
 @import "owl.carousel/dist/assets/owl.carousel.min.css";
@@ -27,10 +30,10 @@
 @import "./front/home/home-form";
 //
 //@import "./styles/home/home-win";
-//
-//@import "./styles/form/form-top";
-//@import "./styles/form/form-form";
-//
+
+@import "./front/form/form-top";
+@import "./front/form/form-form";
+
 //@import "./styles/thankyou/thankyou-info";
 //
 //@import "./styles/text/section-text";

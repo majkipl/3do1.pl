@@ -1,0 +1,351 @@
+<?php
+
+namespace Database\Seeders;
+
+use App\Models\Question;
+use Illuminate\Database\Seeder;
+
+class QuestionSeeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+     *
+     * @return void
+     */
+    public function run()
+    {
+        $data = [
+            [
+                'name' => 'Kiedy odbyły się pierwsze Mistrzostwa Europy w piłce nożnej mężczyzn (jako Puchar Narodów Europy)?',
+                'answer_1' => '1956',
+                'answer_2' => '1960',
+                'answer_3' => '1964',
+                'correct' => 2,
+            ],
+            [
+                'name' => 'Ile edycji Mistrzostw Europy w piłce nożnej mężczyzn odbyło się do tej pory (włącznie z EURO 2020)?',
+                'answer_1' => '13',
+                'answer_2' => '16',
+                'answer_3' => '18',
+                'correct' => 2,
+            ],
+            [
+                'name' => 'Który Polak wpisał się jako pierwszy na listę strzelców w trakcie Mistrzostw Europy w piłce nożnej mężczyzn?',
+                'answer_1' => 'Jakub Błaszczykowski',
+                'answer_2' => 'Eugen Polanski',
+                'answer_3' => 'Roger Guerreiro',
+                'correct' => 3,
+            ],
+            [
+                'name' => 'Ilu selekcjonerów, wliczając w to Paulo Sousę prowadziło reprezentację Polski od jej pierwszego meczu na Mistrzostwach Europy w piłce nożnej mężczyzn?',
+                'answer_1' => '5',
+                'answer_2' => '7',
+                'answer_3' => '8',
+                'correct' => 2,
+            ],
+            [
+                'name' => 'Ile łącznie bramek, nie licząc serii rzutów karnych, straciła reprezentacja Polski w trakcie swoich występów na Mistrzostwach Europy w piłce nożnej mężczyzn (licząc do końca Euro 2016)?',
+                'answer_1' => '9',
+                'answer_2' => '20',
+                'answer_3' => '13',
+                'correct' => 1,
+            ],
+            [
+                'name' => 'Które państwo było pierwszym gospodarzem Mistrzostw Europy w piłce nożnej mężczyzn?',
+                'answer_1' => 'Francja',
+                'answer_2' => 'RFN',
+                'answer_3' => 'Włochy',
+                'correct' => 1,
+            ],
+            [
+                'name' => 'Ile razy trofeum Mistrzostw Europy w piłce nożnej mężczyzn (licząc do EURO 2016) zdobył gospodarz turnieju?',
+                'answer_1' => 'Dwa razy',
+                'answer_2' => 'Ani razu',
+                'answer_3' => 'Trzy razy',
+                'correct' => 3,
+            ],
+            [
+                'name' => 'Gdzie odbędzie się finał Mistrzostw Europy w piłce nożnej mężczyzn 2020?',
+                'answer_1' => 'Allianz Arena',
+                'answer_2' => 'Stadio Olimpico',
+                'answer_3' => 'Stadion Wembley',
+                'correct' => 3,
+            ],
+            [
+                'name' => 'Który piłkarz zagrał w największej ilości meczów podczas finałów Mistrzostw Europy w piłce nożnej mężczyzn (licząc do EURO 2016)?',
+                'answer_1' => 'Michel Platini',
+                'answer_2' => 'Cristiano Ronaldo',
+                'answer_3' => 'Zinédine Yazid Zidane',
+                'correct' => 2,
+            ],
+            [
+                'name' => 'Z jaką reprezentacją nasi piłkarze odnieśli porażkę największą liczbą goli?',
+                'answer_1' => 'Węgry',
+                'answer_2' => 'Dania',
+                'answer_3' => 'Jugosławia',
+                'correct' => 2,
+            ],
+            [
+                'name' => 'Z jaką reprezentacją nasi piłkarze odnieśli porażkę największą liczbą goli?',
+                'answer_1' => 'Węgry',
+                'answer_2' => 'Dania',
+                'answer_3' => 'Jugosławia',
+                'correct' => 2,
+            ],
+            [
+                'name' => 'Ile razy Robert Lewandowski wygrał klasyfikację Złotego Buta?',
+                'answer_1' => 'Raz',
+                'answer_2' => 'Nie wygrał ani razu',
+                'answer_3' => 'Dwa razy',
+                'correct' => 2,
+            ],
+            [
+                'name' => 'Który piłkarz do końca 2020 roku zdobył najwięcej bramek w Premier League spośród wszystkich Polaków?',
+                'answer_1' => 'Robert Warzycha',
+                'answer_2' => 'Krzysztof Warzycha',
+                'answer_3' => 'Jan Bednarek',
+                'correct' => 3,
+            ],
+            [
+                'name' => 'Które drużyny zwyciężyły Puchar Europy Mistrzów Krajowych/Ligi Mistrzów przynajmniej trzy razy z rzędu?',
+                'answer_1' => 'Real Madryt, FC Barcelona, Liverpool FC',
+                'answer_2' => 'Real Madryt, Ajax Amsterdam, Bayern Monachium',
+                'answer_3' => 'Real Madryt, A.C. Milan, Inter Mediolan',
+                'correct' => 2,
+            ],
+            [
+                'name' => 'Pierwszym polskim klubem, który wygrał dwumecz w europejskich pucharach była:',
+                'answer_1' => 'Polonia Bytom',
+                'answer_2' => 'Gwardia Warszawa',
+                'answer_3' => 'Górnik Zabrze',
+                'correct' => 1,
+            ],
+            [
+                'name' => 'Najwyższą porażkę w historii polskich występów w europejskich pucharach odniosła drużyna:',
+                'answer_1' => 'Widzewa Łódź',
+                'answer_2' => 'Wisły Kraków',
+                'answer_3' => 'Odry Opole',
+                'correct' => 1,
+            ],
+            [
+                'name' => 'Największa liczba bramek zdobyta przez reprezentację Polski na Mistrzostwach Świata w piłce nożnej mężczyzn to:',
+                'answer_1' => '14',
+                'answer_2' => '16',
+                'answer_3' => '18',
+                'correct' => 2,
+            ],
+            [
+                'name' => 'Łukasz Piszczek, wybrany do jedenastki stulecia PZPN jako najlepszy prawy obrońca w historii reprezentacji Polski, zaczynał seniorską karierę jako:',
+                'answer_1' => 'Prawy obrońca',
+                'answer_2' => 'Bramkarz',
+                'answer_3' => 'Napastnik',
+                'correct' => 3,
+            ],
+            [
+                'name' => 'W ilu edycjach Mistrzostw Europy w piłce nożnej mężczyzn wystąpiła reprezentacja Polski (włącznie z EURO 2020)?',
+                'answer_1' => '6',
+                'answer_2' => '3',
+                'answer_3' => '4',
+                'correct' => 3,
+            ],
+            [
+                'name' => 'Kto był pierwszym Mistrzem Europy w piłce nożnej mężczyzn?',
+                'answer_1' => 'Związek Radziecki',
+                'answer_2' => 'Czechosłowacja',
+                'answer_3' => 'Jugosławia',
+                'correct' => 1,
+            ],
+            [
+                'name' => 'W którym roku Polska była współorganizatorem Mistrzostw Europy w piłce nożnej mężczyzn?',
+                'answer_1' => '2008',
+                'answer_2' => '2012',
+                'answer_3' => '2016',
+                'correct' => 3,
+            ],
+            [
+                'name' => 'Ilu polskich bramkarzy wystąpiło w meczach reprezentacji Polski na Mistrzostwach Europy w Piłce Nożnej Mężczyzn do końca ME 2016?',
+                'answer_1' => '3',
+                'answer_2' => '4',
+                'answer_3' => '5',
+                'correct' => 2,
+            ],
+            [
+                'name' => 'Która drużyna zdobyła najwięcej medali Mistrzostw Europy w piłce nożnej mężczyzn?',
+                'answer_1' => 'Niemcy/RFN',
+                'answer_2' => 'Francja',
+                'answer_3' => 'Hiszpania',
+                'correct' => 1,
+            ],
+            [
+                'name' => 'Jakich grupowych rywali miała reprezentacja Polski w eliminacjach do EURO 2020?',
+                'answer_1' => 'Słowenia, Izrael, Macedonia Północna',
+                'answer_2' => 'Słowacja, Izrael, Macedonia Północna',
+                'answer_3' => 'Słowacja, Izrael, Macedonia Południowa',
+                'correct' => 1,
+            ],
+            [
+                'name' => 'Która drużyna obroniła tytuł Mistrza Europy w piłce nożnej mężczyzn?',
+                'answer_1' => 'Niemcy/RFN',
+                'answer_2' => 'Francja',
+                'answer_3' => 'Hiszpania',
+                'correct' => 3,
+            ],
+            [
+                'name' => 'W którym roku Polska była współorganizatorem Mistrzostw Europy w piłce nożnej mężczyzn?',
+                'answer_1' => '2008',
+                'answer_2' => '2012',
+                'answer_3' => '2016',
+                'correct' => 2,
+            ],
+            [
+                'name' => 'Ilu polskich bramkarzy wystąpiło w meczach reprezentacji Polski na Mistrzostwach Europy w Piłce Nożnej Mężczyzn do końca ME 2016?',
+                'answer_1' => '3',
+                'answer_2' => '4',
+                'answer_3' => '5',
+                'correct' => 2,
+            ],
+            [
+                'name' => 'Która drużyna zdobyła najwięcej medali Mistrzostw Europy w piłce nożnej mężczyzn?',
+                'answer_1' => 'Niemcy/RFN',
+                'answer_2' => 'Francja',
+                'answer_3' => 'Hiszpania',
+                'correct' => 1,
+            ],
+            [
+                'name' => 'Jakich grupowych rywali miała reprezentacja Polski w eliminacjach do EURO 2020?',
+                'answer_1' => 'Słowenia, Izrael, Macedonia Północna',
+                'answer_2' => 'Słowacja, Izrael, Macedonia Północna',
+                'answer_3' => 'Słowacja, Izrael, Macedonia Południowa',
+                'correct' => 1,
+            ],
+            [
+                'name' => 'Która drużyna obroniła tytuł Mistrza Europy w piłce nożnej mężczyzn?',
+                'answer_1' => 'Niemcy/RFN',
+                'answer_2' => 'Francja',
+                'answer_3' => 'Hiszpania',
+                'correct' => 3,
+            ],
+            [
+                'name' => 'W którym roku Polska była współorganizatorem Mistrzostw Europy w piłce nożnej mężczyzn?',
+                'answer_1' => '2008',
+                'answer_2' => '2012',
+                'answer_3' => '2016',
+                'correct' => 2,
+            ],
+            [
+                'name' => 'Ilu polskich bramkarzy wystąpiło w meczach reprezentacji Polski na Mistrzostwach Europy w Piłce Nożnej Mężczyzn do końca ME 2016?',
+                'answer_1' => '3',
+                'answer_2' => '4',
+                'answer_3' => '5',
+                'correct' => 2,
+            ],
+            [
+                'name' => 'Która drużyna zdobyła najwięcej medali Mistrzostw Europy w piłce nożnej mężczyzn?',
+                'answer_1' => 'Niemcy/RFN',
+                'answer_2' => 'Francja',
+                'answer_3' => 'Hiszpania',
+                'correct' => 1,
+            ],
+            [
+                'name' => 'Jakich grupowych rywali miała reprezentacja Polski w eliminacjach do EURO 2020?',
+                'answer_1' => 'Słowenia, Izrael, Macedonia Północna',
+                'answer_2' => 'Słowacja, Izrael, Macedonia Północna',
+                'answer_3' => 'Słowacja, Izrael, Macedonia Południowa',
+                'correct' => 1,
+            ],
+            [
+                'name' => 'Która drużyna obroniła tytuł Mistrza Europy w piłce nożnej mężczyzn?',
+                'answer_1' => 'Niemcy/RFN',
+                'answer_2' => 'Francja',
+                'answer_3' => 'Hiszpania',
+                'correct' => 3,
+            ],
+            [
+                'name' => 'W którym roku Polska była współorganizatorem Mistrzostw Europy w piłce nożnej mężczyzn?',
+                'answer_1' => '2008',
+                'answer_2' => '2012',
+                'answer_3' => '2016',
+                'correct' => 3,
+            ],
+            [
+                'name' => 'Ilu polskich bramkarzy wystąpiło w meczach reprezentacji Polski na Mistrzostwach Europy w Piłce Nożnej Mężczyzn do końca ME 2016?',
+                'answer_1' => '3',
+                'answer_2' => '4',
+                'answer_3' => '5',
+                'correct' => 2,
+            ],
+            [
+                'name' => 'Która drużyna zdobyła najwięcej medali Mistrzostw Europy w piłce nożnej mężczyzn?',
+                'answer_1' => 'Niemcy/RFN',
+                'answer_2' => 'Francja',
+                'answer_3' => 'Hiszpania',
+                'correct' => 1,
+            ],
+            [
+                'name' => 'Jakich grupowych rywali miała reprezentacja Polski w eliminacjach do EURO 2020?',
+                'answer_1' => 'Słowenia, Izrael, Macedonia Północna',
+                'answer_2' => 'Słowacja, Izrael, Macedonia Północna',
+                'answer_3' => 'Słowacja, Izrael, Macedonia Południowa',
+                'correct' => 1,
+            ],
+            [
+                'name' => 'Która drużyna obroniła tytuł Mistrza Europy w piłce nożnej mężczyzn?',
+                'answer_1' => 'Niemcy/RFN',
+                'answer_2' => 'Francja',
+                'answer_3' => 'Hiszpania',
+                'correct' => 3,
+            ],
+            [
+                'name' => 'Jedynym polskim piłkarzem, który czterokrotnie brał udział na Mistrzostwach Świata w piłce nożnej mężczyzn był:',
+                'answer_1' => 'Henryk Kasperczak',
+                'answer_2' => 'Kazimierz Deyna',
+                'answer_3' => 'Władysław Żmuda',
+                'correct' => 3,
+            ],
+            [
+                'name' => 'Który piłkarz z trio Lewandowski, Błaszczykowski, Piszczek jako pierwszy trafił do Borussi Dortmund?',
+                'answer_1' => 'Robert Lewandowski',
+                'answer_2' => 'Jakub Błaszczykowski',
+                'answer_3' => 'Łukasz Piszczek',
+                'correct' => 2,
+            ],
+            [
+                'name' => 'Ilu reprezentantów Polski ujrzało czerwone kartki w trakcie udziałów reprezentacji Polski na mundialu?',
+                'answer_1' => '0',
+                'answer_2' => '1',
+                'answer_3' => '5',
+                'correct' => 2,
+            ],
+            [
+                'name' => 'Ile razy reprezentacja Polski w piłce nożnej mężczyzn zdobyła medal olimpijski:',
+                'answer_1' => '1',
+                'answer_2' => '3',
+                'answer_3' => '4',
+                'correct' => 2,
+            ],
+            [
+                'name' => 'Pierwszym polskim klubem, który wystąpił w europejskich rozgrywkach pod szyldem Ligi Mistrzów był/a:',
+                'answer_1' => 'Legia Warszawa',
+                'answer_2' => 'Wisła Kraków',
+                'answer_3' => 'Widzew Łódź',
+                'correct' => 1,
+            ],
+            [
+                'name' => 'Ile klubów zdobyło Mistrzostwo Polski rekordowe 14 razy:',
+                'answer_1' => '2',
+                'answer_2' => '3',
+                'answer_3' => '4',
+                'correct' => 2,
+            ],
+            [
+                'name' => 'Ostatnią polską drużyną, która dotarła do minimum 1/8 finału europejskich pucharów był/a:',
+                'answer_1' => 'Legia Warszawa',
+                'answer_2' => 'Wisła Kraków',
+                'answer_3' => 'Lech Poznań',
+                'correct' => 2,
+            ],
+        ];
+
+        Question::insert($data);
+    }
+}

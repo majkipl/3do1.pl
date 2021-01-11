@@ -45,6 +45,1071 @@
   src: url("/fonts/cairo-bold.woff") format("woff");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
+@font-face {
+  font-family: "Glyphicons Halflings";
+  src: url("/fonts/glyphicons/glyphicons-halflings-regular.eot");
+  src: url("/fonts/glyphicons/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("/fonts/glyphicons/glyphicons-halflings-regular.woff2") format("woff2"), url("/fonts/glyphicons/glyphicons-halflings-regular.woff") format("woff"), url("/fonts/glyphicons/glyphicons-halflings-regular.ttf") format("truetype"), url("/fonts/glyphicons/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg");
+}
+.glyphicon {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: "Glyphicons Halflings";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.glyphicon-asterisk:before {
+  content: "*";
+}
+
+.glyphicon-plus:before {
+  content: "+";
+}
+
+.glyphicon-eur:before, .glyphicon-euro:before {
+  content: "€";
+}
+
+.glyphicon-minus:before {
+  content: "−";
+}
+
+.glyphicon-cloud:before {
+  content: "☁";
+}
+
+.glyphicon-envelope:before {
+  content: "✉";
+}
+
+.glyphicon-pencil:before {
+  content: "✏";
+}
+
+.glyphicon-glass:before {
+  content: "\e001";
+}
+
+.glyphicon-music:before {
+  content: "\e002";
+}
+
+.glyphicon-search:before {
+  content: "\e003";
+}
+
+.glyphicon-heart:before {
+  content: "\e005";
+}
+
+.glyphicon-star:before {
+  content: "\e006";
+}
+
+.glyphicon-star-empty:before {
+  content: "\e007";
+}
+
+.glyphicon-user:before {
+  content: "\e008";
+}
+
+.glyphicon-film:before {
+  content: "\e009";
+}
+
+.glyphicon-th-large:before {
+  content: "\e010";
+}
+
+.glyphicon-th:before {
+  content: "\e011";
+}
+
+.glyphicon-th-list:before {
+  content: "\e012";
+}
+
+.glyphicon-ok:before {
+  content: "\e013";
+}
+
+.glyphicon-remove:before {
+  content: "\e014";
+}
+
+.glyphicon-zoom-in:before {
+  content: "\e015";
+}
+
+.glyphicon-zoom-out:before {
+  content: "\e016";
+}
+
+.glyphicon-off:before {
+  content: "\e017";
+}
+
+.glyphicon-signal:before {
+  content: "\e018";
+}
+
+.glyphicon-cog:before {
+  content: "\e019";
+}
+
+.glyphicon-trash:before {
+  content: "\e020";
+}
+
+.glyphicon-home:before {
+  content: "\e021";
+}
+
+.glyphicon-file:before {
+  content: "\e022";
+}
+
+.glyphicon-time:before {
+  content: "\e023";
+}
+
+.glyphicon-road:before {
+  content: "\e024";
+}
+
+.glyphicon-download-alt:before {
+  content: "\e025";
+}
+
+.glyphicon-download:before {
+  content: "\e026";
+}
+
+.glyphicon-upload:before {
+  content: "\e027";
+}
+
+.glyphicon-inbox:before {
+  content: "\e028";
+}
+
+.glyphicon-play-circle:before {
+  content: "\e029";
+}
+
+.glyphicon-repeat:before {
+  content: "\e030";
+}
+
+.glyphicon-refresh:before {
+  content: "\e031";
+}
+
+.glyphicon-list-alt:before {
+  content: "\e032";
+}
+
+.glyphicon-lock:before {
+  content: "\e033";
+}
+
+.glyphicon-flag:before {
+  content: "\e034";
+}
+
+.glyphicon-headphones:before {
+  content: "\e035";
+}
+
+.glyphicon-volume-off:before {
+  content: "\e036";
+}
+
+.glyphicon-volume-down:before {
+  content: "\e037";
+}
+
+.glyphicon-volume-up:before {
+  content: "\e038";
+}
+
+.glyphicon-qrcode:before {
+  content: "\e039";
+}
+
+.glyphicon-barcode:before {
+  content: "\e040";
+}
+
+.glyphicon-tag:before {
+  content: "\e041";
+}
+
+.glyphicon-tags:before {
+  content: "\e042";
+}
+
+.glyphicon-book:before {
+  content: "\e043";
+}
+
+.glyphicon-bookmark:before {
+  content: "\e044";
+}
+
+.glyphicon-print:before {
+  content: "\e045";
+}
+
+.glyphicon-camera:before {
+  content: "\e046";
+}
+
+.glyphicon-font:before {
+  content: "\e047";
+}
+
+.glyphicon-bold:before {
+  content: "\e048";
+}
+
+.glyphicon-italic:before {
+  content: "\e049";
+}
+
+.glyphicon-text-height:before {
+  content: "\e050";
+}
+
+.glyphicon-text-width:before {
+  content: "\e051";
+}
+
+.glyphicon-align-left:before {
+  content: "\e052";
+}
+
+.glyphicon-align-center:before {
+  content: "\e053";
+}
+
+.glyphicon-align-right:before {
+  content: "\e054";
+}
+
+.glyphicon-align-justify:before {
+  content: "\e055";
+}
+
+.glyphicon-list:before {
+  content: "\e056";
+}
+
+.glyphicon-indent-left:before {
+  content: "\e057";
+}
+
+.glyphicon-indent-right:before {
+  content: "\e058";
+}
+
+.glyphicon-facetime-video:before {
+  content: "\e059";
+}
+
+.glyphicon-picture:before {
+  content: "\e060";
+}
+
+.glyphicon-map-marker:before {
+  content: "\e062";
+}
+
+.glyphicon-adjust:before {
+  content: "\e063";
+}
+
+.glyphicon-tint:before {
+  content: "\e064";
+}
+
+.glyphicon-edit:before {
+  content: "\e065";
+}
+
+.glyphicon-share:before {
+  content: "\e066";
+}
+
+.glyphicon-check:before {
+  content: "\e067";
+}
+
+.glyphicon-move:before {
+  content: "\e068";
+}
+
+.glyphicon-step-backward:before {
+  content: "\e069";
+}
+
+.glyphicon-fast-backward:before {
+  content: "\e070";
+}
+
+.glyphicon-backward:before {
+  content: "\e071";
+}
+
+.glyphicon-play:before {
+  content: "\e072";
+}
+
+.glyphicon-pause:before {
+  content: "\e073";
+}
+
+.glyphicon-stop:before {
+  content: "\e074";
+}
+
+.glyphicon-forward:before {
+  content: "\e075";
+}
+
+.glyphicon-fast-forward:before {
+  content: "\e076";
+}
+
+.glyphicon-step-forward:before {
+  content: "\e077";
+}
+
+.glyphicon-eject:before {
+  content: "\e078";
+}
+
+.glyphicon-chevron-left:before {
+  content: "\e079";
+}
+
+.glyphicon-chevron-right:before {
+  content: "\e080";
+}
+
+.glyphicon-plus-sign:before {
+  content: "\e081";
+}
+
+.glyphicon-minus-sign:before {
+  content: "\e082";
+}
+
+.glyphicon-remove-sign:before {
+  content: "\e083";
+}
+
+.glyphicon-ok-sign:before {
+  content: "\e084";
+}
+
+.glyphicon-question-sign:before {
+  content: "\e085";
+}
+
+.glyphicon-info-sign:before {
+  content: "\e086";
+}
+
+.glyphicon-screenshot:before {
+  content: "\e087";
+}
+
+.glyphicon-remove-circle:before {
+  content: "\e088";
+}
+
+.glyphicon-ok-circle:before {
+  content: "\e089";
+}
+
+.glyphicon-ban-circle:before {
+  content: "\e090";
+}
+
+.glyphicon-arrow-left:before {
+  content: "\e091";
+}
+
+.glyphicon-arrow-right:before {
+  content: "\e092";
+}
+
+.glyphicon-arrow-up:before {
+  content: "\e093";
+}
+
+.glyphicon-arrow-down:before {
+  content: "\e094";
+}
+
+.glyphicon-share-alt:before {
+  content: "\e095";
+}
+
+.glyphicon-resize-full:before {
+  content: "\e096";
+}
+
+.glyphicon-resize-small:before {
+  content: "\e097";
+}
+
+.glyphicon-exclamation-sign:before {
+  content: "\e101";
+}
+
+.glyphicon-gift:before {
+  content: "\e102";
+}
+
+.glyphicon-leaf:before {
+  content: "\e103";
+}
+
+.glyphicon-fire:before {
+  content: "\e104";
+}
+
+.glyphicon-eye-open:before {
+  content: "\e105";
+}
+
+.glyphicon-eye-close:before {
+  content: "\e106";
+}
+
+.glyphicon-warning-sign:before {
+  content: "\e107";
+}
+
+.glyphicon-plane:before {
+  content: "\e108";
+}
+
+.glyphicon-calendar:before {
+  content: "\e109";
+}
+
+.glyphicon-random:before {
+  content: "\e110";
+}
+
+.glyphicon-comment:before {
+  content: "\e111";
+}
+
+.glyphicon-magnet:before {
+  content: "\e112";
+}
+
+.glyphicon-chevron-up:before {
+  content: "\e113";
+}
+
+.glyphicon-chevron-down:before {
+  content: "\e114";
+}
+
+.glyphicon-retweet:before {
+  content: "\e115";
+}
+
+.glyphicon-shopping-cart:before {
+  content: "\e116";
+}
+
+.glyphicon-folder-close:before {
+  content: "\e117";
+}
+
+.glyphicon-folder-open:before {
+  content: "\e118";
+}
+
+.glyphicon-resize-vertical:before {
+  content: "\e119";
+}
+
+.glyphicon-resize-horizontal:before {
+  content: "\e120";
+}
+
+.glyphicon-hdd:before {
+  content: "\e121";
+}
+
+.glyphicon-bullhorn:before {
+  content: "\e122";
+}
+
+.glyphicon-bell:before {
+  content: "\e123";
+}
+
+.glyphicon-certificate:before {
+  content: "\e124";
+}
+
+.glyphicon-thumbs-up:before {
+  content: "\e125";
+}
+
+.glyphicon-thumbs-down:before {
+  content: "\e126";
+}
+
+.glyphicon-hand-right:before {
+  content: "\e127";
+}
+
+.glyphicon-hand-left:before {
+  content: "\e128";
+}
+
+.glyphicon-hand-up:before {
+  content: "\e129";
+}
+
+.glyphicon-hand-down:before {
+  content: "\e130";
+}
+
+.glyphicon-circle-arrow-right:before {
+  content: "\e131";
+}
+
+.glyphicon-circle-arrow-left:before {
+  content: "\e132";
+}
+
+.glyphicon-circle-arrow-up:before {
+  content: "\e133";
+}
+
+.glyphicon-circle-arrow-down:before {
+  content: "\e134";
+}
+
+.glyphicon-globe:before {
+  content: "\e135";
+}
+
+.glyphicon-wrench:before {
+  content: "\e136";
+}
+
+.glyphicon-tasks:before {
+  content: "\e137";
+}
+
+.glyphicon-filter:before {
+  content: "\e138";
+}
+
+.glyphicon-briefcase:before {
+  content: "\e139";
+}
+
+.glyphicon-fullscreen:before {
+  content: "\e140";
+}
+
+.glyphicon-dashboard:before {
+  content: "\e141";
+}
+
+.glyphicon-paperclip:before {
+  content: "\e142";
+}
+
+.glyphicon-heart-empty:before {
+  content: "\e143";
+}
+
+.glyphicon-link:before {
+  content: "\e144";
+}
+
+.glyphicon-phone:before {
+  content: "\e145";
+}
+
+.glyphicon-pushpin:before {
+  content: "\e146";
+}
+
+.glyphicon-usd:before {
+  content: "\e148";
+}
+
+.glyphicon-gbp:before {
+  content: "\e149";
+}
+
+.glyphicon-sort:before {
+  content: "\e150";
+}
+
+.glyphicon-sort-by-alphabet:before {
+  content: "\e151";
+}
+
+.glyphicon-sort-by-alphabet-alt:before {
+  content: "\e152";
+}
+
+.glyphicon-sort-by-order:before {
+  content: "\e153";
+}
+
+.glyphicon-sort-by-order-alt:before {
+  content: "\e154";
+}
+
+.glyphicon-sort-by-attributes:before {
+  content: "\e155";
+}
+
+.glyphicon-sort-by-attributes-alt:before {
+  content: "\e156";
+}
+
+.glyphicon-unchecked:before {
+  content: "\e157";
+}
+
+.glyphicon-expand:before {
+  content: "\e158";
+}
+
+.glyphicon-collapse-down:before {
+  content: "\e159";
+}
+
+.glyphicon-collapse-up:before {
+  content: "\e160";
+}
+
+.glyphicon-log-in:before {
+  content: "\e161";
+}
+
+.glyphicon-flash:before {
+  content: "\e162";
+}
+
+.glyphicon-log-out:before {
+  content: "\e163";
+}
+
+.glyphicon-new-window:before {
+  content: "\e164";
+}
+
+.glyphicon-record:before {
+  content: "\e165";
+}
+
+.glyphicon-save:before {
+  content: "\e166";
+}
+
+.glyphicon-open:before {
+  content: "\e167";
+}
+
+.glyphicon-saved:before {
+  content: "\e168";
+}
+
+.glyphicon-import:before {
+  content: "\e169";
+}
+
+.glyphicon-export:before {
+  content: "\e170";
+}
+
+.glyphicon-send:before {
+  content: "\e171";
+}
+
+.glyphicon-floppy-disk:before {
+  content: "\e172";
+}
+
+.glyphicon-floppy-saved:before {
+  content: "\e173";
+}
+
+.glyphicon-floppy-remove:before {
+  content: "\e174";
+}
+
+.glyphicon-floppy-save:before {
+  content: "\e175";
+}
+
+.glyphicon-floppy-open:before {
+  content: "\e176";
+}
+
+.glyphicon-credit-card:before {
+  content: "\e177";
+}
+
+.glyphicon-transfer:before {
+  content: "\e178";
+}
+
+.glyphicon-cutlery:before {
+  content: "\e179";
+}
+
+.glyphicon-header:before {
+  content: "\e180";
+}
+
+.glyphicon-compressed:before {
+  content: "\e181";
+}
+
+.glyphicon-earphone:before {
+  content: "\e182";
+}
+
+.glyphicon-phone-alt:before {
+  content: "\e183";
+}
+
+.glyphicon-tower:before {
+  content: "\e184";
+}
+
+.glyphicon-stats:before {
+  content: "\e185";
+}
+
+.glyphicon-sd-video:before {
+  content: "\e186";
+}
+
+.glyphicon-hd-video:before {
+  content: "\e187";
+}
+
+.glyphicon-subtitles:before {
+  content: "\e188";
+}
+
+.glyphicon-sound-stereo:before {
+  content: "\e189";
+}
+
+.glyphicon-sound-dolby:before {
+  content: "\e190";
+}
+
+.glyphicon-sound-5-1:before {
+  content: "\e191";
+}
+
+.glyphicon-sound-6-1:before {
+  content: "\e192";
+}
+
+.glyphicon-sound-7-1:before {
+  content: "\e193";
+}
+
+.glyphicon-copyright-mark:before {
+  content: "\e194";
+}
+
+.glyphicon-registration-mark:before {
+  content: "\e195";
+}
+
+.glyphicon-cloud-download:before {
+  content: "\e197";
+}
+
+.glyphicon-cloud-upload:before {
+  content: "\e198";
+}
+
+.glyphicon-tree-conifer:before {
+  content: "\e199";
+}
+
+.glyphicon-tree-deciduous:before {
+  content: "\e200";
+}
+
+.glyphicon-cd:before {
+  content: "\e201";
+}
+
+.glyphicon-save-file:before {
+  content: "\e202";
+}
+
+.glyphicon-open-file:before {
+  content: "\e203";
+}
+
+.glyphicon-level-up:before {
+  content: "\e204";
+}
+
+.glyphicon-copy:before {
+  content: "\e205";
+}
+
+.glyphicon-paste:before {
+  content: "\e206";
+}
+
+.glyphicon-alert:before {
+  content: "\e209";
+}
+
+.glyphicon-equalizer:before {
+  content: "\e210";
+}
+
+.glyphicon-king:before {
+  content: "\e211";
+}
+
+.glyphicon-queen:before {
+  content: "\e212";
+}
+
+.glyphicon-pawn:before {
+  content: "\e213";
+}
+
+.glyphicon-bishop:before {
+  content: "\e214";
+}
+
+.glyphicon-knight:before {
+  content: "\e215";
+}
+
+.glyphicon-baby-formula:before {
+  content: "\e216";
+}
+
+.glyphicon-tent:before {
+  content: "⛺";
+}
+
+.glyphicon-blackboard:before {
+  content: "\e218";
+}
+
+.glyphicon-bed:before {
+  content: "\e219";
+}
+
+.glyphicon-apple:before {
+  content: "\f8ff";
+}
+
+.glyphicon-erase:before {
+  content: "\e221";
+}
+
+.glyphicon-hourglass:before {
+  content: "⌛";
+}
+
+.glyphicon-lamp:before {
+  content: "\e223";
+}
+
+.glyphicon-duplicate:before {
+  content: "\e224";
+}
+
+.glyphicon-piggy-bank:before {
+  content: "\e225";
+}
+
+.glyphicon-scissors:before {
+  content: "\e226";
+}
+
+.glyphicon-bitcoin:before {
+  content: "\e227";
+}
+
+.glyphicon-btc:before {
+  content: "\e227";
+}
+
+.glyphicon-xbt:before {
+  content: "\e227";
+}
+
+.glyphicon-yen:before {
+  content: "¥";
+}
+
+.glyphicon-jpy:before {
+  content: "¥";
+}
+
+.glyphicon-ruble:before {
+  content: "₽";
+}
+
+.glyphicon-rub:before {
+  content: "₽";
+}
+
+.glyphicon-scale:before {
+  content: "\e230";
+}
+
+.glyphicon-ice-lolly:before {
+  content: "\e231";
+}
+
+.glyphicon-ice-lolly-tasted:before {
+  content: "\e232";
+}
+
+.glyphicon-education:before {
+  content: "\e233";
+}
+
+.glyphicon-option-horizontal:before {
+  content: "\e234";
+}
+
+.glyphicon-option-vertical:before {
+  content: "\e235";
+}
+
+.glyphicon-menu-hamburger:before {
+  content: "\e236";
+}
+
+.glyphicon-modal-window:before {
+  content: "\e237";
+}
+
+.glyphicon-oil:before {
+  content: "\e238";
+}
+
+.glyphicon-grain:before {
+  content: "\e239";
+}
+
+.glyphicon-sunglasses:before {
+  content: "\e240";
+}
+
+.glyphicon-text-size:before {
+  content: "\e241";
+}
+
+.glyphicon-text-color:before {
+  content: "\e242";
+}
+
+.glyphicon-text-background:before {
+  content: "\e243";
+}
+
+.glyphicon-object-align-top:before {
+  content: "\e244";
+}
+
+.glyphicon-object-align-bottom:before {
+  content: "\e245";
+}
+
+.glyphicon-object-align-horizontal:before {
+  content: "\e246";
+}
+
+.glyphicon-object-align-left:before {
+  content: "\e247";
+}
+
+.glyphicon-object-align-vertical:before {
+  content: "\e248";
+}
+
+.glyphicon-object-align-right:before {
+  content: "\e249";
+}
+
+.glyphicon-triangle-right:before {
+  content: "\e250";
+}
+
+.glyphicon-triangle-left:before {
+  content: "\e251";
+}
+
+.glyphicon-triangle-bottom:before {
+  content: "\e252";
+}
+
+.glyphicon-triangle-top:before {
+  content: "\e253";
+}
+
+.glyphicon-console:before {
+  content: "\e254";
+}
+
+.glyphicon-superscript:before {
+  content: "\e255";
+}
+
+.glyphicon-subscript:before {
+  content: "\e256";
+}
+
+.glyphicon-menu-left:before {
+  content: "\e257";
+}
+
+.glyphicon-menu-right:before {
+  content: "\e258";
+}
+
+.glyphicon-menu-down:before {
+  content: "\e259";
+}
+
+.glyphicon-menu-up:before {
+  content: "\e260";
+}
+
 /*!
  * Bootstrap v4.6.2 (https://getbootstrap.com/)
  * Copyright 2011-2022 The Bootstrap Authors
@@ -9286,6 +10351,301 @@ a.text-dark:hover, a.text-dark:focus {
     border-color: #dee2e6;
   }
 }
+/*!
+ * Datetimepicker for Bootstrap 3
+ * version : 4.17.47
+ * https://github.com/Eonasdan/bootstrap-datetimepicker/
+ */
+.bootstrap-datetimepicker-widget {
+  list-style: none;
+  margin-bottom: 30px;
+}
+.bootstrap-datetimepicker-widget.dropdown-menu {
+  display: block;
+  margin: 2px 0;
+  padding: 4px;
+  width: 19em;
+}
+@media (min-width: 768px), (min-width: 992px), (min-width: 1200px) {
+  .bootstrap-datetimepicker-widget.dropdown-menu.timepicker-sbs {
+    width: 38em;
+  }
+}
+.bootstrap-datetimepicker-widget.dropdown-menu:before, .bootstrap-datetimepicker-widget.dropdown-menu:after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+}
+.bootstrap-datetimepicker-widget.dropdown-menu.bottom:before {
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-bottom: 7px solid #ccc;
+  border-bottom-color: rgba(0, 0, 0, 0.2);
+  top: -7px;
+  left: 7px;
+}
+.bootstrap-datetimepicker-widget.dropdown-menu.bottom:after {
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 6px solid white;
+  top: -6px;
+  left: 8px;
+}
+.bootstrap-datetimepicker-widget.dropdown-menu.top:before {
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 7px solid #ccc;
+  border-top-color: rgba(0, 0, 0, 0.2);
+  bottom: -7px;
+  left: 6px;
+}
+.bootstrap-datetimepicker-widget.dropdown-menu.top:after {
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid white;
+  bottom: -6px;
+  left: 7px;
+}
+.bootstrap-datetimepicker-widget.dropdown-menu.pull-right:before {
+  left: auto;
+  right: 6px;
+}
+.bootstrap-datetimepicker-widget.dropdown-menu.pull-right:after {
+  left: auto;
+  right: 7px;
+}
+.bootstrap-datetimepicker-widget .list-unstyled {
+  margin: 0;
+}
+.bootstrap-datetimepicker-widget a[data-action] {
+  padding: 6px 0;
+}
+.bootstrap-datetimepicker-widget a[data-action]:active {
+  box-shadow: none;
+}
+.bootstrap-datetimepicker-widget .timepicker-hour,
+.bootstrap-datetimepicker-widget .timepicker-minute,
+.bootstrap-datetimepicker-widget .timepicker-second {
+  width: 54px;
+  font-weight: bold;
+  font-size: 1.2em;
+  margin: 0;
+}
+.bootstrap-datetimepicker-widget button[data-action] {
+  padding: 6px;
+}
+.bootstrap-datetimepicker-widget button[data-action][data-action=incrementHours]::after, .bootstrap-datetimepicker-widget button[data-action][data-action=incrementMinutes]::after, .bootstrap-datetimepicker-widget button[data-action][data-action=decrementHours]::after, .bootstrap-datetimepicker-widget button[data-action][data-action=decrementMinutes]::after, .bootstrap-datetimepicker-widget button[data-action][data-action=showHours]::after, .bootstrap-datetimepicker-widget button[data-action][data-action=showMinutes]::after, .bootstrap-datetimepicker-widget button[data-action][data-action=togglePeriod]::after, .bootstrap-datetimepicker-widget button[data-action][data-action=clear]::after, .bootstrap-datetimepicker-widget button[data-action][data-action=today]::after {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+.bootstrap-datetimepicker-widget button[data-action][data-action=incrementHours]::after {
+  content: "Increment Hours";
+}
+.bootstrap-datetimepicker-widget button[data-action][data-action=incrementMinutes]::after {
+  content: "Increment Minutes";
+}
+.bootstrap-datetimepicker-widget button[data-action][data-action=decrementHours]::after {
+  content: "Decrement Hours";
+}
+.bootstrap-datetimepicker-widget button[data-action][data-action=decrementMinutes]::after {
+  content: "Decrement Minutes";
+}
+.bootstrap-datetimepicker-widget button[data-action][data-action=showHours]::after {
+  content: "Show Hours";
+}
+.bootstrap-datetimepicker-widget button[data-action][data-action=showMinutes]::after {
+  content: "Show Minutes";
+}
+.bootstrap-datetimepicker-widget button[data-action][data-action=togglePeriod]::after {
+  content: "Toggle AM/PM";
+}
+.bootstrap-datetimepicker-widget button[data-action][data-action=clear]::after {
+  content: "Clear the picker";
+}
+.bootstrap-datetimepicker-widget button[data-action][data-action=today]::after {
+  content: "Set the date to today";
+}
+.bootstrap-datetimepicker-widget .picker-switch {
+  text-align: center;
+}
+.bootstrap-datetimepicker-widget .picker-switch::after {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+  content: "Toggle Date and Time Screens";
+}
+.bootstrap-datetimepicker-widget .picker-switch td {
+  padding: 0;
+  margin: 0;
+  height: auto;
+  width: auto;
+  line-height: inherit;
+}
+.bootstrap-datetimepicker-widget .picker-switch td span {
+  line-height: 2.5;
+  height: 2.5em;
+  width: 100%;
+}
+.bootstrap-datetimepicker-widget table {
+  width: 100%;
+  margin: 0;
+}
+.bootstrap-datetimepicker-widget table td,
+.bootstrap-datetimepicker-widget table th {
+  text-align: center;
+  border-radius: 4px;
+}
+.bootstrap-datetimepicker-widget table th {
+  height: 20px;
+  line-height: 20px;
+  width: 20px;
+}
+.bootstrap-datetimepicker-widget table th.picker-switch {
+  width: 145px;
+}
+.bootstrap-datetimepicker-widget table th.disabled, .bootstrap-datetimepicker-widget table th.disabled:hover {
+  background: none;
+  color: #777777;
+  cursor: not-allowed;
+}
+.bootstrap-datetimepicker-widget table th.prev::after {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+  content: "Previous Month";
+}
+.bootstrap-datetimepicker-widget table th.next::after {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+  content: "Next Month";
+}
+.bootstrap-datetimepicker-widget table th:first-child {
+  cursor: pointer;
+}
+.bootstrap-datetimepicker-widget table th:first-child:hover {
+  background: #eeeeee;
+}
+.bootstrap-datetimepicker-widget table td {
+  height: 54px;
+  line-height: 54px;
+  width: 54px;
+}
+.bootstrap-datetimepicker-widget table td.cw {
+  font-size: 0.8em;
+  height: 20px;
+  line-height: 20px;
+  color: #777777;
+}
+.bootstrap-datetimepicker-widget table td.day {
+  height: 20px;
+  line-height: 20px;
+  width: 20px;
+}
+.bootstrap-datetimepicker-widget table td.day:hover, .bootstrap-datetimepicker-widget table td.day.hour:hover, .bootstrap-datetimepicker-widget table td.day.minute:hover, .bootstrap-datetimepicker-widget table td.day.second:hover {
+  background: #eeeeee;
+  cursor: pointer;
+}
+.bootstrap-datetimepicker-widget table td.old, .bootstrap-datetimepicker-widget table td.new {
+  color: #777777;
+}
+.bootstrap-datetimepicker-widget table td.today {
+  position: relative;
+}
+.bootstrap-datetimepicker-widget table td.today:before {
+  content: "";
+  display: inline-block;
+  border: solid transparent;
+  border-width: 0 0 7px 7px;
+  border-bottom-color: #337ab7;
+  border-top-color: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  bottom: 4px;
+  right: 4px;
+}
+.bootstrap-datetimepicker-widget table td.active, .bootstrap-datetimepicker-widget table td.active:hover {
+  background-color: #337ab7;
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+.bootstrap-datetimepicker-widget table td.active.today:before, .bootstrap-datetimepicker-widget table td.active:hover.today:before {
+  border-bottom-color: #fff;
+}
+.bootstrap-datetimepicker-widget table td.disabled, .bootstrap-datetimepicker-widget table td.disabled:hover {
+  background: none;
+  color: #777777;
+  cursor: not-allowed;
+}
+.bootstrap-datetimepicker-widget table td span {
+  display: inline-block;
+  width: 54px;
+  height: 54px;
+  line-height: 54px;
+  margin: 2px 1.5px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.bootstrap-datetimepicker-widget table td span:hover {
+  background: #eeeeee;
+}
+.bootstrap-datetimepicker-widget table td span.active {
+  background-color: #337ab7;
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+.bootstrap-datetimepicker-widget table td span.old {
+  color: #777777;
+}
+.bootstrap-datetimepicker-widget table td span.disabled, .bootstrap-datetimepicker-widget table td span.disabled:hover {
+  background: none;
+  color: #777777;
+  cursor: not-allowed;
+}
+.bootstrap-datetimepicker-widget.usetwentyfour td.hour {
+  height: 27px;
+  line-height: 27px;
+}
+.bootstrap-datetimepicker-widget.wider {
+  width: 21em;
+}
+.bootstrap-datetimepicker-widget .datepicker-decades .decade {
+  line-height: 1.8em !important;
+}
+.bootstrap-datetimepicker-widget .input-group.date .input-group-addon {
+  cursor: pointer;
+}
+.bootstrap-datetimepicker-widget .sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
 body {
   font-family: cairo, sans-serif;
 }
@@ -10420,9 +11780,6 @@ img {
   padding: 150px 0 50px;
   margin-top: -30px;
 }
-.home-products .owl-carousel {
-  background-color: #030D3E;
-}
 .home-products .heading {
   margin-bottom: 20px;
   font-family: clan-pro;
@@ -10872,6 +12229,463 @@ img {
 .home-form .button:hover {
   background-color: #FFCB00;
   color: #030D3E;
+}
+
+.form-top {
+  background: no-repeat center/cover;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.66) 100%, rgba(0, 0, 0, 0.66) 100%), url("/images/form/top.jpg");
+  background-size: 100% auto;
+  height: 400px;
+  transition: background 0.3s;
+}
+.form-top:hover {
+  background-size: 110%;
+}
+.form-top .title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  margin-bottom: 0;
+  font-family: clan-pro;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 40px;
+  line-height: 54px;
+}
+@media (min-width: 768px) {
+  .form-top .title {
+    font-size: 50px;
+    line-height: 65px;
+  }
+}
+@media (min-width: 992px) {
+  .form-top .title {
+    font-size: 60px;
+    line-height: 76px;
+  }
+}
+
+.form-form {
+  background-color: #FFCB00;
+  padding: 30px 0;
+}
+.form-form .input {
+  background-color: #FFFFFF;
+  display: block;
+  width: 100%;
+  height: 42px;
+  padding: 0 22px;
+  border: none;
+  border-radius: 0;
+  color: #030D3E;
+  font-size: 18px;
+  line-height: 18px;
+}
+.form-form .input::-moz-placeholder {
+  color: #030D3E;
+}
+.form-form .input::placeholder {
+  color: #030D3E;
+}
+.form-form .input.select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: no-repeat #FFFFFF right 27px top 25%/auto;
+  background-image: url("/images/svg/form/select.svg");
+  padding-right: 62px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.form-form .input.invalid {
+  outline: 3px solid #CB181C;
+}
+.form-form .input:focus {
+  outline: none;
+}
+.form-form .input:focus-visible {
+  outline: 3px solid #030D3E;
+}
+.form-form .error-post {
+  color: #CB181C;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+}
+.form-form .form-img {
+  display: block;
+  margin: 0 auto;
+  transition: transform 0.25s ease-in-out;
+  transform: scale(0.95);
+}
+.form-form .form-img:hover {
+  transform: scale(1);
+}
+.form-form .label-checkbox {
+  display: block;
+  cursor: pointer;
+  padding-left: 25px;
+  position: relative;
+}
+.form-form .label-checkbox .checkbox {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 18px;
+  height: 18px;
+  margin-top: 2px;
+  border: 2px solid #030D3E;
+  position: absolute;
+  top: 2px;
+  left: 0;
+}
+.form-form .label-checkbox .checkbox.invalid {
+  border: 2px solid #CB181C;
+}
+.form-form .label-checkbox .checkbox:checked {
+  background: no-repeat center/contain url("/images/svg/form/check.svg");
+}
+.form-form .label-checkbox .checkbox:focus {
+  outline: none;
+}
+.form-form .label-checkbox .checkbox:focus-visible {
+  background-color: #FFFFFF;
+}
+.form-form .label-checkbox span {
+  width: 100%;
+  margin-left: 30px;
+  color: #000000;
+  text-align: justify;
+  font-size: 14px;
+  line-height: 22px;
+}
+.form-form .rules .rules-title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+}
+@media (min-width: 768px) {
+  .form-form .rules .rules-title {
+    font-size: 17px;
+    line-height: 23px;
+  }
+}
+@media (min-width: 992px) {
+  .form-form .rules .rules-title {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+.form-form .rules .rules-list {
+  padding-left: 20px;
+  font-size: 16px;
+  line-height: 22px;
+}
+@media (min-width: 768px) {
+  .form-form .rules .rules-list {
+    font-size: 17px;
+    line-height: 23px;
+  }
+}
+@media (min-width: 992px) {
+  .form-form .rules .rules-list {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+.form-form .rules .rules-link {
+  display: inline-block;
+  margin: 1rem 0;
+  color: #030D3E;
+  text-transform: uppercase;
+  text-decoration: underline;
+  font-size: 16px;
+  line-height: 22px;
+}
+@media (min-width: 768px) {
+  .form-form .rules .rules-link {
+    font-size: 17px;
+    line-height: 23px;
+  }
+}
+@media (min-width: 992px) {
+  .form-form .rules .rules-link {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+.form-form .field {
+  width: 100%;
+  position: relative;
+  flex-shrink: 0;
+  margin-bottom: 2rem;
+}
+.form-form .field.file-uploads {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+.form-form .field.file-uploads .thumbs {
+  border: 0;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.form-form .field.file-uploads .thumbs img {
+  max-width: 100%;
+  border: 0;
+  border-radius: 0;
+  overflow: hidden;
+  background: no-repeat #EEEEEE center/contain;
+  width: 100%;
+}
+.form-form .field.file-uploads .info {
+  position: relative;
+  background: no-repeat #030D3E center/contain;
+  display: block;
+  max-width: 100%;
+  min-height: 185px;
+  padding: 30px;
+  margin: 0;
+  color: #fff;
+  width: 100%;
+  border: 0;
+}
+.form-form .field.file-uploads .info span {
+  margin: 30px 0 0 0;
+  font-size: 18px;
+}
+.form-form .field.file-uploads .info img {
+  display: block;
+  margin: 0px auto 30px auto;
+}
+.form-form .field.file-uploads img {
+  max-width: 76px;
+}
+.form-form .field.file-uploads .hidden {
+  display: none;
+}
+.form-form .field.file-uploads .hidden img {
+  margin: 0 auto;
+  max-width: 300px;
+  display: block;
+}
+.form-form .field.file-uploads .uploads-d-none {
+  overflow: hidden;
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.form-form .superoption-button {
+  width: 540px;
+  padding-left: 50px;
+}
+.form-form .superoption-button::after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  display: block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #FFFFFF;
+}
+.form-form .superoption-button.superoption-open::after {
+  background: no-repeat center/cover url("/images/svg/form/option.svg");
+}
+.form-form .superoption-box {
+  position: relative;
+  display: none;
+  background-color: #FFFFFF;
+  padding: 25px 0;
+  margin-bottom: 50px;
+}
+.form-form .superoption-box::before {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  right: -10px;
+  width: 100%;
+  height: 100%;
+  border-bottom: 10px solid #030D3E;
+  border-right: 10px solid #030D3E;
+}
+.form-form .superoption-box .superoption-text {
+  color: #030D3E;
+  font-size: 16px;
+  line-height: 22px;
+}
+@media (min-width: 768px) {
+  .form-form .superoption-box .superoption-text {
+    font-size: 17px;
+    line-height: 23px;
+  }
+}
+@media (min-width: 992px) {
+  .form-form .superoption-box .superoption-text {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+.form-form .superoption-box .superoption-text.left {
+  text-align: left;
+}
+.form-form .superoption-box .superoption-text.right {
+  text-align: right;
+}
+.form-form .superoption-box .superoption-text.bold {
+  font-weight: bold;
+}
+.form-form .superoption-box .superoption-text.uppercase {
+  text-transform: uppercase;
+}
+.form-form .superoption-box .superoption-text.font-top {
+  font-family: clan-pro;
+}
+.form-form .superoption-box .superoption-text.border-bottom-1 {
+  border-bottom: 1px solid #030D3E;
+}
+.form-form .superoption-box .superoption-text.large {
+  font-size: 26px;
+  line-height: 32px;
+}
+@media (min-width: 768px) {
+  .form-form .superoption-box .superoption-text.large {
+    font-size: 28px;
+    line-height: 34px;
+  }
+}
+@media (min-width: 992px) {
+  .form-form .superoption-box .superoption-text.large {
+    font-size: 30px;
+    line-height: 36px;
+  }
+}
+.form-form .superoption-box .superoption-img {
+  display: block;
+  margin: 0 auto;
+}
+.form-form .superoption-box .superoption-title {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  max-width: 350px;
+  margin: 0 auto;
+}
+.form-form .superoption-box .superoption-title .span {
+  display: block;
+  margin-bottom: 20px;
+  font-family: clan-pro;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 22px;
+}
+@media (min-width: 768px) {
+  .form-form .superoption-box .superoption-title .span {
+    font-size: 17px;
+    line-height: 23px;
+  }
+}
+@media (min-width: 992px) {
+  .form-form .superoption-box .superoption-title .span {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+.form-form .superoption-box .superoption-title .input {
+  border: 1px solid #030D3E;
+}
+.form-form .superoption-box .file-input {
+  max-width: 350px;
+  margin: 0 auto;
+}
+.form-form .superoption-box .return-button {
+  background-color: transparent;
+  color: #030D3E;
+  font-family: cairo, sans-serif;
+}
+.form-form .superoption-box .return-button:hover {
+  color: #CB181C;
+  text-decoration: underline;
+}
+.form-form .superoption-box .return-button:focus-visible {
+  color: #CB181C;
+  text-decoration: underline;
+}
+.form-form .superoption-box .quiz-error {
+  color: #CB181C;
+}
+@media (min-width: 992px) {
+  .form-form .superoption-box.superoption-box-1 .superoption-img {
+    margin: -40px auto -20px;
+  }
+}
+.form-form .superoption-quiz {
+  display: none;
+  padding-top: 30px;
+}
+.form-form .superoption-quiz .answer {
+  display: block;
+  width: 100%;
+  padding-left: 65px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+.form-form .superoption-quiz .answer::before {
+  content: "";
+  position: static;
+  width: auto;
+  height: auto;
+  margin-right: 65px;
+  border: none;
+  text-transform: none;
+}
+.form-form .superoption-quiz .answer.answer-1::before {
+  content: "a)";
+}
+.form-form .superoption-quiz .answer.answer-2::before {
+  content: "b)";
+}
+.form-form .superoption-quiz .answer.answer-3::before {
+  content: "c)";
+}
+.form-form .superoption-end {
+  display: none;
+}
+.form-form .superoption-end .end-box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 0 60px;
+}
+.form-form .superoption-end .end-button {
+  /*
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  */
+  width: 350px;
+  margin-bottom: 10px;
+}
+.form-form .superoption-end .end-button.replay-button {
+  bottom: 0;
+  margin-top: 60px;
+}
+.form-form .superoption-end .end-text {
+  display: none;
+  /*
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  */
+  white-space: nowrap;
 }
 
 .show-error {
