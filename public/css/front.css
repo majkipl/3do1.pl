@@ -12688,6 +12688,75 @@ img {
   white-space: nowrap;
 }
 
+.thankyou-info {
+  background-color: #FFCB00;
+  padding: 50px 0;
+  overflow: hidden;
+}
+@media (min-width: 992px) {
+  .thankyou-info {
+    padding-top: 75px;
+  }
+}
+.thankyou-info .heading {
+  margin-bottom: 20px;
+  font-family: clan-pro;
+  color: #030D3E;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 40px;
+  line-height: 54px;
+}
+@media (min-width: 768px) {
+  .thankyou-info .heading {
+    font-size: 50px;
+    line-height: 65px;
+  }
+}
+@media (min-width: 992px) {
+  .thankyou-info .heading {
+    font-size: 60px;
+    line-height: 76px;
+  }
+}
+.thankyou-info .content {
+  position: relative;
+  background-color: #FFFFFF;
+  padding: 50px 0 25px;
+  margin-bottom: 25px;
+}
+.thankyou-info .content .text {
+  font-family: clan-pro;
+  color: #030D3E;
+  text-align: center;
+  font-size: 16px;
+  line-height: 22px;
+}
+@media (min-width: 768px) {
+  .thankyou-info .content .text {
+    font-size: 17px;
+    line-height: 23px;
+  }
+}
+@media (min-width: 992px) {
+  .thankyou-info .content .text {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+.thankyou-info .content .img {
+  display: block;
+  margin: 0 auto -25px;
+}
+@media (min-width: 992px) {
+  .thankyou-info .content .img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateX(50%);
+  }
+}
+
 .show-error {
   display: none;
 }

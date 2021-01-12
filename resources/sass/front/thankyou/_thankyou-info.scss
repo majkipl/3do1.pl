@@ -1,0 +1,64 @@
+.thankyou-info {
+    background-color: $secondary;
+    padding: 50px 0;
+    overflow: hidden;
+
+    @media #{$min-lg} {
+        padding-top: 75px;
+    }
+
+    .heading {
+        margin-bottom: 20px;
+        font-family: $font-top;
+        color: $primary;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 40px;
+        line-height: 54px;
+
+        @media #{$min-md} {
+            font-size: 50px;
+            line-height: 65px;
+        }
+        @media #{$min-lg} {
+            font-size: 60px;
+            line-height: 76px;
+        }
+    }
+
+    .content {
+        position: relative;
+        background-color: $white;
+        padding: 50px 0 25px;
+        margin-bottom: 25px;
+
+        .text {
+            font-family: $font-top;
+            color: $primary;
+            text-align: center;
+            font-size: 16px;
+            line-height: 22px;
+
+            @media #{$min-md} {
+                font-size: 17px;
+                line-height: 23px;
+            }
+            @media #{$min-lg} {
+                font-size: 18px;
+                line-height: 24px;
+            }
+        }
+
+        .img {
+            display: block;
+            margin: 0 auto -25px;
+
+            @media #{$min-lg} {
+                position: absolute;
+                top: 0;
+                right: 0;
+                transform: translateX(50%);
+            }
+        }
+    }
+}
