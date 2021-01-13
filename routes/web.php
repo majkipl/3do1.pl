@@ -30,3 +30,13 @@ Route::get('/formularz', [ApplicationController::class, 'form'])->name('front.ap
 Route::post('/formularz/zapisz', [ApplicationController::class, 'store'])->name('front.application.save');
 Route::get('/formularz/podziekowania', [ThxController::class, 'form'])->name('front.thx.form');
 Route::get('/potwierdzam/{application}/{token}', [ConfirmController::class, 'application'])->name('front.confirm.application');
+
+/* BACKEND */
+
+Route::middleware(['auth', 'verified', 'jwt.access'])->group(function () {
+    Route::get('/panel', [\App\Http\Controllers\Panel\HomeController::class, 'index'])->name('back.home');
+
+    Route::middleware(['can:isAdmin'])->group(function () {
+        //
+    });
+});

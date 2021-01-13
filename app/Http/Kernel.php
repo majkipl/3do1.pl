@@ -2,6 +2,9 @@
 
 namespace App\Http;
 
+use App\Http\Middleware\ApiAuthMiddleware;
+use App\Http\Middleware\CheckTokenAccess;
+use App\Http\Middleware\JwtAuthMiddleware;
 use Illuminate\Foundation\Http\Kernel as HttpKernel;
 
 class Kernel extends HttpKernel
@@ -63,5 +66,8 @@ class Kernel extends HttpKernel
         'signed' => \Illuminate\Routing\Middleware\ValidateSignature::class,
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
         'verified' => \Illuminate\Auth\Middleware\EnsureEmailIsVerified::class,
+        'jwt.access' => CheckTokenAccess::class,
+        'api.keys' => JwtAuthMiddleware::class,
+        'api.auth' => ApiAuthMiddleware::class
     ];
 }

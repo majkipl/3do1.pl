@@ -16,7 +16,8 @@ class DatabaseSeeder extends Seeder
         $this->call([
             WhenceSeeder::class,
             QuestionSeeder::class,
-            ApplicationSeeder::class
+            ApplicationSeeder::class,
+            UserSeeder::class
         ]);
     }
 }

@@ -15,9 +15,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-//Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-//    return $request->user();
-//});
-
 Route::get('/quiz', [QuestionController::class, 'quiz'])->name('api.quiz');
 Route::post('/quiz/correct', [QuestionController::class, 'correctness'])->name('api.quiz.correct');
+
+Route::middleware(['api.keys'])->group(function () {
+    Route::middleware(['api.auth'])->group(function () {
+        //
+    });
+});
