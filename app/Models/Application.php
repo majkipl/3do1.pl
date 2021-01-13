@@ -85,4 +85,101 @@ class Application extends Model
     {
         return $this->belongsTo(Whence::class);
     }
+
+    /**
+     * @param $query
+     * @param $search
+     * @param $searchable
+     * @return mixed
+     */
+    public function scopeSearch($query, $search, $searchable)
+    {
+        if ($search && $searchable) {
+            $query->where(function ($query) use ($search, $searchable) {
+                foreach ($searchable as $column) {
+                    switch ($column) {
+                        case 'id':
+                            $query->orWhere('id', '=', '%' . $search . '%');
+                            break;
+                        case 'firstname':
+                        case 'lastname':
+                        case 'birthday':
+                        case 'email':
+                        case 'phone':
+                        case 'shop':
+                        case 'product_code':
+                        case 'img_receipt':
+                        case 'competition_title':
+                        case 'competition_audio':
+                        case 'timer':
+                        case 'response':
+                        case 'correct':
+                        case 'token':
+                            $query->orWhere($column, 'LIKE', '%' . $search . '%');
+                            break;
+                        case 'whence.name':
+                            $query->orWhereHas('whence', function ($subQuery) use ($search) {
+                                $subQuery->where('name', 'LIKE', '%' . $search . '%');
+                            });
+                            break;
+                    }
+                }
+            });
+        }
+
+        return $query;
+    }
+
+    /**
+     * @param $query
+     * @param $filter
+     * @return mixed
+     */
+    public function scopeFilter($query, $filter)
+    {
+        if ($filter) {
+            $filters = json_decode($filter, true);
+
+            foreach ($filters as $column => $value) {
+                switch ($column) {
+                    case 'id':
+                        $query->where('id', $value);
+                        break;
+                    case 'firstname':
+                    case 'lastname':
+                    case 'birthday':
+                    case 'email':
+                    case 'phone':
+                    case 'shop':
+                    case 'product_code':
+                    case 'img_receipt':
+                    case 'competition_title':
+                    case 'competition_audio':
+                    case 'timer':
+                    case 'response':
+                    case 'correct':
+                    case 'token':
+                        $query->where($column, 'LIKE', "%$value%");
+                        break;
+                    case 'whence.name':
+                        $query->orWhereHas('whence', function ($subQuery) use ($value) {
+                            $subQuery->where('name', 'like', '%' . $value . '%');
+                        });
+                        break;
+                    case 'is_main_prize':
+                    case 'is_week_prize':
+                    case 'legal_1':
+                    case 'legal_2':
+                    case 'legal_3':
+                    case 'legal_4':
+                    case 'legal_5':
+                    case 'legal_6':
+                        $query->orWhere($column, '=', $value === 'TAK');
+                        break;
+                }
+            }
+        }
+
+        return $query;
+    }
 }

@@ -48,7 +48,7 @@ class ApplicationFactory extends Factory
             $obj['is_main_prize'] = $mainPrize;
 
             $obj['competition_title'] = $this->faker->text(128);
-            $obj['competition_audio'] = 'receipts/UReSLM067wKkT9TyB5vohgT6elOWh35ApP2ZA8c9.jpg';
+            $obj['competition_audio'] = 'audios/DsfqRLE0fWzDHnRxg3A9LuIKjxC5G55NDWGQgSqQ.mp3';
         }
 
         if( $weekPrize ) {
