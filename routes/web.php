@@ -37,6 +37,7 @@ Route::middleware(['auth', 'verified', 'jwt.access'])->group(function () {
     Route::get('/panel', [\App\Http\Controllers\Panel\HomeController::class, 'index'])->name('back.home');
 
     Route::middleware(['can:isAdmin'])->group(function () {
-        //
+        Route::get('/panel/zgloszenie', [\App\Http\Controllers\Panel\ApplicationController::class, 'index'])->name('back.application');
+        Route::get('/panel/zgloszenie/{application}', [\App\Http\Controllers\Panel\ApplicationController::class, 'show'])->name('back.application.show');
     });
 });
