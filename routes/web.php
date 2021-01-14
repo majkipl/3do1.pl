@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ApplicationController;
 use App\Http\Controllers\ConfirmController;
+use App\Http\Controllers\ContactController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ThxController;
 use Illuminate\Support\Facades\Route;
@@ -30,6 +31,7 @@ Route::get('/formularz', [ApplicationController::class, 'form'])->name('front.ap
 Route::post('/formularz/zapisz', [ApplicationController::class, 'store'])->name('front.application.save');
 Route::get('/formularz/podziekowania', [ThxController::class, 'form'])->name('front.thx.form');
 Route::get('/potwierdzam/{application}/{token}', [ConfirmController::class, 'application'])->name('front.confirm.application');
+Route::post('/kontakt/wyslij', [ContactController::class, 'send'])->name('front.contact.send');
 
 /* BACKEND */
 

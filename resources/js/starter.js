@@ -94,6 +94,11 @@ const starter = {
                 $(this.dataset.show).fadeIn();
                 $(this.dataset.hide).fadeOut();
             });
+
+            $(document).on('click', '#kontakt a.send', function () {
+                $(this).closest('form').submit();
+                return false;
+            });
         },
 
         onChange: function () {
@@ -152,6 +157,51 @@ const starter = {
         },
 
         onSubmit: function () {
+            $(document).on('submit', '#formContact form', function () {
+
+                $('.input, .textarea, .checkbox, .file').trigger('change');
+
+                console.log(starter._var.error);
+
+                if (Object.keys(starter._var.error).length === 0) {
+
+                    const fields = starter.form.getFields($(this).closest('form'));
+                    const url = $(this).closest('form').attr('action');
+
+                    axios({
+                        method: 'post', url: url, headers: {
+                            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                        }, data: fields,
+                    }).then(function (response) {
+                        $('#contact h3').html(response.data.results.message);
+                        $('#contact .form').hide();
+                    }).catch(function (error) {
+                        $(`.error-post`).text('');
+
+                        if (error.response) {
+                            Object.keys(error.response.data.errors).map((item) => {
+                                $(`.error-${item}`).text(error.response.data.errors[item][0]);
+                            });
+                        } else if (error.request) {
+                            console.log(error.request);
+                        } else {
+                            console.log('Error', error.message);
+                        }
+                    });
+
+                } else {
+                    $('.error-post').text('');
+                    for (let key in starter._var.error) {
+                        if (starter._var.error.hasOwnProperty(key)) {
+                            let value = starter._var.error[key];
+                            $('.error-' + key).text(value).closest('.field').addClass('has-error');
+                        }
+                    }
+                }
+
+                return false;
+            });
+
             $(document).on('submit', '#form form', function () {
                 // $('.input, .textarea, .checkbox, .file').trigger('change');
                 // $('#birthday').trigger('dp.change');
@@ -257,12 +307,10 @@ const starter = {
                 case 'whence':
                     return event.type === 'change' ? starter.form.validator.isWhence(value, 'Skąd wiesz o promocji') : true;
                 case 'legal_1':
-                    return event.type === 'change' ? starter.form.validator.isLegal(item) : true;
                 case 'legal_2':
-                    return event.type === 'change' ? starter.form.validator.isLegal(item) : true;
                 case 'legal_3':
-                    return event.type === 'change' ? starter.form.validator.isLegal(item) : true;
                 case 'legal_4':
+                case 'legal_7':
                     return event.type === 'change' ? starter.form.validator.isLegal(item) : true;
                 case 'img_receipt':
                     return event.type === 'change' ? starter.form.validator.isFile(item, 'Zdjęcie paragonu') : true;
@@ -278,6 +326,12 @@ const starter = {
                     return event.type === 'change' && isWeekPrize ? starter.form.validator.isCorrect(value) : true;
                 case 'birthday':
                     return event.type === 'dp' && event.namespace === 'change' ? starter.form.validator.isBirthday(value, 'Data urodzenia') : true;
+                case 'name':
+                    return event.type === 'change' ? starter.form.validator.isName(value, 'Imię') : true;
+                case 'subject':
+                    return event.type === 'change' ? starter.form.validator.isName(value, 'Tytuł wiadomości') : true;
+                case 'message':
+                    return event.type === 'change' ? starter.form.validator.isMessage(value, 'Treść wiadomości') : true;
                 default:
                     return true;
             }
@@ -386,15 +440,16 @@ const starter = {
                 } else {
                     return true;
                 }
-            }, // isMessage: (value, name) => {
-            //     if (value === "") {
-            //         return `Pole ${name} jest wymagane.`;
-            //     } else if (value.length < 3 || value.length > 4096) {
-            //         return `Pole ${name} musi mieć od 3 do 4096 znaków.`;
-            //     } else {
-            //         return true;
-            //     }
-            // },
+            },
+            isMessage: (value, name) => {
+                if (value === "") {
+                    return `Pole ${name} jest wymagane.`;
+                } else if (value.length < 3 || value.length > 4096) {
+                    return `Pole ${name} musi mieć od 3 do 4096 znaków.`;
+                } else {
+                    return true;
+                }
+            },
             isFile: (file, name) => {
                 const extension = file[0]?.files[0]?.name.split('.').pop().toLowerCase();
                 if (file[0].files.length === 0) {
