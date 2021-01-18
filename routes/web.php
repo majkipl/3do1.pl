@@ -4,6 +4,7 @@ use App\Http\Controllers\ApplicationController;
 use App\Http\Controllers\ConfirmController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\Panel\QuestionController;
 use App\Http\Controllers\ThxController;
 use Illuminate\Support\Facades\Route;
 
@@ -41,5 +42,10 @@ Route::middleware(['auth', 'verified', 'jwt.access'])->group(function () {
     Route::middleware(['can:isAdmin'])->group(function () {
         Route::get('/panel/zgloszenie', [\App\Http\Controllers\Panel\ApplicationController::class, 'index'])->name('back.application');
         Route::get('/panel/zgloszenie/{application}', [\App\Http\Controllers\Panel\ApplicationController::class, 'show'])->name('back.application.show');
+
+        Route::get('/panel/pytanie', [QuestionController::class, 'index'])->name('back.question');
+        Route::get('/panel/pytanie/dodaj', [QuestionController::class, 'create'])->name('back.question.create');
+        Route::get('/panel/pytanie/zmien/{question}', [QuestionController::class, 'edit'])->name('back.question.edit');
+        Route::get('/panel/pytanie/{question}', [QuestionController::class, 'show'])->name('back.question.show');
     });
 });

@@ -30,7 +30,7 @@ class StoreApplicationRequestTest extends ValidationTestCase
             'birthday' => now()->subYears(18)->format('d-m-Y'),
             'email' => $this->faker->word . '@gmail.com',
             'phone' => $this->faker->numerify('+48#########'),
-            'shop' => $this->faker->text($this->faker->numberBetween(3, 128)),
+            'shop' => $this->faker->text($this->faker->numberBetween(5, 128)),
             'whence' => $whence->id,
             'product_code' => $this->faker->numerify('########'),
             'img_receipt' => $this->createTestFile('receipt.jpg', 1024),
@@ -39,11 +39,6 @@ class StoreApplicationRequestTest extends ValidationTestCase
             'legal_3' => true,
             'legal_4' => true
         ];
-
-        // week_prize
-        //  timer
-        //  response
-        //  correct
 
         foreach ($without as $item) {
             if (array_key_exists($item, $data)) {

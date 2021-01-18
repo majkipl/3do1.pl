@@ -22,5 +22,10 @@ Route::post('/quiz/correct', [QuestionController::class, 'correctness'])->name('
 Route::middleware(['api.keys'])->group(function () {
     Route::middleware(['api.auth'])->group(function () {
         Route::get('/applications', [ApplicationController::class, 'index'])->name('api.application');
+
+        Route::get('/questions', [QuestionController::class, 'index'])->name('api.question');
+        Route::post('/questions', [QuestionController::class, 'add'])->name('api.question.add');
+        Route::put('/questions', [QuestionController::class, 'update'])->name('api.question.update');
+        Route::delete('/questions/{question}', [QuestionController::class, 'delete'])->name('api.question.delete');
     });
 });
