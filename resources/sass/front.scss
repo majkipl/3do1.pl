@@ -9,7 +9,6 @@
 @import '~bootstrap/scss/bootstrap';
 @import "./plugins/bootstrap-datetimepicker";
 
-
 // OWL
 @import "owl.carousel/dist/assets/owl.carousel.min.css";
 @import "owl.carousel/dist/assets/owl.theme.default.min.css";
@@ -35,9 +34,9 @@
 @import "./front/form/form-form";
 
 @import "./front/thankyou/thankyou-info";
-//
-//@import "./styles/text/section-text";
-//
+
+@import "./front/text/section-text";
+
 //@import "./styles/error/error-info";
-//
+
 @import "./front/extra";

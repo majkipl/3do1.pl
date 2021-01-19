@@ -4,7 +4,9 @@ use App\Http\Controllers\ApplicationController;
 use App\Http\Controllers\ConfirmController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ImprintController;
 use App\Http\Controllers\Panel\QuestionController;
+use App\Http\Controllers\PolicyController;
 use App\Http\Controllers\ThxController;
 use Illuminate\Support\Facades\Route;
 
@@ -33,6 +35,10 @@ Route::post('/formularz/zapisz', [ApplicationController::class, 'store'])->name(
 Route::get('/formularz/podziekowania', [ThxController::class, 'form'])->name('front.thx.form');
 Route::get('/potwierdzam/{application}/{token}', [ConfirmController::class, 'application'])->name('front.confirm.application');
 Route::post('/kontakt/wyslij', [ContactController::class, 'send'])->name('front.contact.send');
+Route::get('/polityka/prywatnosci', [PolicyController::class, 'privacy'])->name('front.policy.privacy');
+Route::get('/polityka/cookies', [PolicyController::class, 'cookie'])->name('front.policy.cookie');
+Route::get('/zasady-uzytkownika', [PolicyController::class, 'user'])->name('front.policy.user');
+Route::get('/imprint', [ImprintController::class, 'index'])->name('front.imprint');
 
 /* BACKEND */
 
