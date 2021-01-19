@@ -12783,6 +12783,27 @@ img {
   line-height: 54px;
 }
 
+.error-info {
+  padding: 100px 0;
+}
+.error-info .heading {
+  margin-bottom: 20px;
+  color: #030D3E;
+  font-family: clan-pro;
+  text-align: center;
+  text-transform: uppercase;
+}
+.error-info .info {
+  margin-bottom: 0;
+  color: #030D3E;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+}
+.error-info .link {
+  color: #030D3E;
+}
+
 .show-error {
   display: none;
 }
