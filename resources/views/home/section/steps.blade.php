@@ -63,13 +63,11 @@
                     <a class="rules-link" href="{{ asset('pdf/konkurs.pdf') }}" target="_blank"
                        rel="noopener noreferrer">Pełna treść regulaminu</a>
                 </div>
-                <a class="button" href="/formularz">chcę wziąć udział w konkursie!</a>
+                <a class="button" href="{{ route('front.application.form') }}">chcę wziąć udział w konkursie!</a>
             </div>
             <div class="col-lg-4 step-animation"><img class="feature-img"
                                                       src="{{ asset('images/home/participation.png') }}"
                                                       alt="feature-img"/></div>
         </div>
     </div>
-
-    {{--    <div class="appla"></div>--}}
 </section>

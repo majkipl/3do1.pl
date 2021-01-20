@@ -12,7 +12,7 @@
                             Batteries GmbH &amp; Co. KGaA używa plików cookie do zbierania informacji w witrynie
                             http://www.varta-consumer.com/pl-pl. Dodatkowe informacje na temat stosowania,
                             przechowywania i udostępniania przez firmę informacji o użytkownikach witryny internetowej
-                            można również znaleźć w „<a href="/polityka-prywatnosci/">Zasadach ochrony prywatności</a>”.
+                            można również znaleźć w „<a href="{{ route('front.policy.privacy') }}">Zasadach ochrony prywatności</a>”.
                         </p>
                         <p>&nbsp;</p>
                         <h3>Czym są pliki cookie?</h3>

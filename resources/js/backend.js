@@ -34,13 +34,13 @@ const starter = {
                 headers['X-HTTP-Method-Override'] = method;
             }
 
-            if (confirm('Czy na pewno trwale usunąć ten wpis?') == true) {
+            if (confirm('Czy na pewno trwale usunąć ten wpis?') === true) {
                 axios({
                     method: method,
                     url: url,
                     headers: headers,
                     data: fields,
-                }).then(function (response) {
+                }).then(function () {
                     $('.bt-table').bootstrapTable('refresh');
                 }).catch(function (error) {
                     $(`.error-post`).text('');

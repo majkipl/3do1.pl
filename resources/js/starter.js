@@ -203,8 +203,8 @@ const starter = {
             });
 
             $(document).on('submit', '#form form', function () {
-                // $('.input, .textarea, .checkbox, .file').trigger('change');
-                // $('#birthday').trigger('dp.change');
+                $('.input, .textarea, .checkbox, .file').trigger('change');
+                $('#birthday').trigger('dp.change');
 
                 console.log(starter._var.error);
 
@@ -553,7 +553,6 @@ const starter = {
                 })
                 .catch(function (error) {
                     console.error(error);
-                    // TODO: Obsługa ewentualnego błędu
                 });
         },
 

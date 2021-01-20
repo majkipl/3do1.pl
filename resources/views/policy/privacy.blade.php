@@ -266,7 +266,7 @@
                         <h3>5. Pliki cookie</h3>
                         <p>
                             Aby dowiedzieć się więcej na temat plików cookie, kliknij tutaj, <a
-                                href="/polityka-cookies/">aby zapoznać się z „Zasadami stosowania plików cookie”</a>.
+                                href="{{ route('front.policy.cookie') }}">aby zapoznać się z „Zasadami stosowania plików cookie”</a>.
                         </p>
                         <p>&nbsp;</p>
                         <h3>6. Bezpieczeństwo danych</h3>

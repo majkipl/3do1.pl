@@ -19,7 +19,7 @@ volumes:
 services:
   httpd:
     container_name: ${DOCKER_DOMAIN}-httpd
-    image: ${DOCKER_DOMAIN}-php:8.0.2-apache
+    image: ${DOCKER_DOMAIN}-php:7.4-apache
     build:
       context: .
       dockerfile: Dockerfile_Httpd

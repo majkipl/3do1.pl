@@ -9,13 +9,20 @@
         <div class="row">
             <div class="col-lg-5 col-xl-6">
                 <ul class="info">
-                    <li><a class="text" href="/polityka-prywatnosci/" rel="noopener noreferrer">Polityka prywatności</a>
+                    <li>
+                        <a class="text" href="{{ route('front.policy.privacy') }}" rel="noopener noreferrer">Polityka prywatności</a>
                     </li>
-                    <li><a class="text" href="/polityka-cookies/" rel="noopener noreferrer">Polityka cookies</a></li>
-                    <li><a class="text" href="/zasady-uzytkownika/" rel="noopener noreferrer">Zasady użytkowania</a>
+                    <li>
+                        <a class="text" href="{{ route('front.policy.cookie') }}" rel="noopener noreferrer">Polityka cookies</a>
                     </li>
-                    <li><a class="text mb-3" href="/imprint/" rel="noopener noreferrer">Imprint</a></li>
-                    <li><a class="link" href="https://www.varta-consumer.pl/" target="_blank" rel="noopener noreferrer">www.varta-consumer.pl</a>
+                    <li>
+                        <a class="text" href="{{ route('front.policy.user') }}" rel="noopener noreferrer">Zasady użytkowania</a>
+                    </li>
+                    <li>
+                        <a class="text mb-3" href="{{ route('front.imprint') }}" rel="noopener noreferrer">Imprint</a>
+                    </li>
+                    <li>
+                        <a class="link" href="https://www.varta-consumer.pl/" target="_blank" rel="noopener noreferrer">www.varta-consumer.pl</a>
                     </li>
                 </ul>
             </div>
