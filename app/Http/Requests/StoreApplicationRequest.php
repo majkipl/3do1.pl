@@ -58,7 +58,7 @@ class StoreApplicationRequest extends FormRequest
         $rules['week_prize'] = 'bail';
         if ($this->input('week_prize') !== null) {
             $rules['timer'] = 'bail|required';
-            $rules['response'] = 'bail|required';
+            $rules['response'] = 'bail|required|regex:/^[1-3]?(,[1-3]*)*[1-3]?$/';
             $rules['correct'] = 'bail|required';
         }
 

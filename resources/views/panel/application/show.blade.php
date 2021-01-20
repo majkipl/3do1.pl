@@ -61,7 +61,8 @@
                                     <td>Plik audio:</td>
                                     <td>
                                         <audio controls="" id="competition_audio_tag">
-                                            <source src="{{ asset('storage/' . $application->competition_audio) }}" type="audio/mpeg">
+                                            <source src="{{ asset('storage/' . $application->competition_audio) }}"
+                                                    type="audio/mpeg">
                                             Twoja przeglądarka nie wspiera elementu AUDIO.
                                         </audio>
                                     </td>
@@ -72,11 +73,27 @@
                                 </tr>
                                 <tr>
                                     <td>Czas:</td>
-                                    <td>{{ $application->timer }}</td>
+                                    <td>{{ $application->timer }}s</td>
                                 </tr>
                                 <tr>
                                     <td>Odpowiedzi:</td>
-                                    <td>{{ $application->response }}</td>
+                                    <td>
+                                        <table class="questions">
+                                            <tbody>
+                                            @foreach($questions as $question)
+                                                <tr>
+                                                    <td colspan="3" class="name">{{ $question->name }}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="@if($answers[$question->id] == 1 ) @if($answers[$question->id] == $question->correct) correct @else incorrect @endif @endif @if($question->correct == 1 ) select @endif">{{ $question->answer_1 }}</td>
+                                                    <td class="@if($answers[$question->id] == 2 ) @if($answers[$question->id] == $question->correct) correct @else incorrect @endif @endif @if($question->correct == 2 ) select @endif">{{ $question->answer_2 }}</td>
+                                                    <td class="@if($answers[$question->id] == 3 ) @if($answers[$question->id] == $question->correct) correct @else incorrect @endif @endif @if($question->correct == 3 ) select @endif">{{ $question->answer_3 }}</td>
+                                                </tr>
+                                            @endforeach
+
+                                            </tbody>
+                                        </table>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>Poprawne odpowiedzi:</td>

@@ -1891,19 +1891,46 @@ p.back-link {
     height: 34px;
 }
 
-table.item.show.data tr.correct td {
-    background-color: rgba(0, 255, 0, 0.2);
+table.item.show.data {
+    tr {
+
+        > td {
+            padding: 5px 15px 5px 0;
+
+            :first-child {
+                min-width: 150px;
+                font-weight: 700;
+            }
+
+            table.questions tr > td {
+                min-width: 150px;
+                font-weight: normal;
+                padding: 10px;
+
+                &.name {
+                    font-weight: 700;
+                }
+
+                &.select {
+                    border: 2px solid black;
+                }
+
+                &.correct {
+                    background-color: lightgreen;
+                }
+
+                &.incorrect {
+                    background-color: lightcoral;
+                }
+            }
+        }
+    }
 }
-table.item.show.data tr.incorrect td {
-    background-color: rgba(255, 0, 0, 0.2);
-}
-table.item.show.data tr > td {
-    padding: 5px 15px 5px 0;
-}
-table.item.show.data tr > td:first-child {
-    min-width: 150px;
-    font-weight: 700;
-}
+
+
+
+
+
 
 .bt-table .icon {
     color: #444;

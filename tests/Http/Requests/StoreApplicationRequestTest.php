@@ -5,6 +5,7 @@ namespace Tests\Http\Requests;
 use App\Http\Requests\StoreApplicationRequest;
 use App\Models\Application;
 use App\Models\Whence;
+use App\Traits\ApplicationTrait;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Support\Str;
@@ -13,7 +14,7 @@ use Illuminate\Support\Facades\Validator;
 
 class StoreApplicationRequestTest extends ValidationTestCase
 {
-    use RefreshDatabase, WithFaker;
+    use RefreshDatabase, WithFaker, ApplicationTrait;
 
     /**
      * @param array $arr
@@ -82,7 +83,7 @@ class StoreApplicationRequestTest extends ValidationTestCase
         $data = $this->getData([
             'week_prize' => 'on',
             'timer' => $this->faker->randomNumber(),
-            'response' => $this->faker->text(128),
+            'response' => $this->generateRandomAnswers(17),
             'correct' => $this->faker->numberBetween(0, 17),
         ], []);
 

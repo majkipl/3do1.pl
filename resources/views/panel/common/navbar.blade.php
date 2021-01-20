@@ -39,6 +39,9 @@
                         <li>
                             <a href="{{ route('back.application') }}">Zgłoszenia</a>
                         </li>
+                        <li>
+                            <a href="{{ route('back.question') }}">Pytania</a>
+                        </li>
                     @endcan
                     <li class="dropdown">
                         <a id="navbarDropdown" class="dropdown-toggle" href="#" role="button"

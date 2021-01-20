@@ -2120,21 +2120,29 @@ p.back-link {
   height: 34px;
 }
 
-table.item.show.data tr.correct td {
-  background-color: rgba(0, 255, 0, 0.2);
-}
-
-table.item.show.data tr.incorrect td {
-  background-color: rgba(255, 0, 0, 0.2);
-}
-
 table.item.show.data tr > td {
   padding: 5px 15px 5px 0;
 }
-
-table.item.show.data tr > td:first-child {
+table.item.show.data tr > td :first-child {
   min-width: 150px;
   font-weight: 700;
+}
+table.item.show.data tr > td table.questions tr > td {
+  min-width: 150px;
+  font-weight: normal;
+  padding: 10px;
+}
+table.item.show.data tr > td table.questions tr > td.name {
+  font-weight: 700;
+}
+table.item.show.data tr > td table.questions tr > td.select {
+  border: 2px solid black;
+}
+table.item.show.data tr > td table.questions tr > td.correct {
+  background-color: lightgreen;
+}
+table.item.show.data tr > td table.questions tr > td.incorrect {
+  background-color: lightcoral;
 }
 
 .bt-table .icon {
